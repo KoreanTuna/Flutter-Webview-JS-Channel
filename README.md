@@ -22,7 +22,8 @@ sequenceDiagram
 
 
 <br>
-```mermaid
+
+``` mermaid
 flowchart TD
     A[FlutterApp 시작] --> B{결제 방식}
     B -- "URL 기반" --> C[결제 URL 전달]
