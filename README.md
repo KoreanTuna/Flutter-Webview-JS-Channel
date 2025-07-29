@@ -32,7 +32,7 @@ flowchart TD
     C --> E[WebView 초기화]
     D --> E
 
-    E --> F[토큰/쿠키 삽입<br>(PaymentSessionManager)]
+    E --> F[토큰/쿠키 삽입 (PaymentSessionManager)]
     F --> G[InAppWebView 로딩 시작]
 
     G --> H{네트워크 요청}
@@ -46,6 +46,7 @@ flowchart TD
 
     M --> N[onResult()로 전달]
     N --> O{결과 처리}
-    O -->|성공| P[거래 완료 UI / 서버에 영수증 전송]
-    O -->|실패| Q[실패 안내 UI / 재시도 유도]
+    O -->|성공| P[거래 완료 UI 또는 영수증 전송]
+    O -->|실패| Q[실패 안내 UI 또는 재시도 유도]
+
 ```
