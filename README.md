@@ -1,3 +1,5 @@
+```mermaid
+
 flowchart TD
     A[FlutterApp 시작] --> B{결제 방식}
     B -- "URL 기반" --> C[결제 URL 전달]
@@ -22,3 +24,4 @@ flowchart TD
     N --> O{결과 처리}
     O -->|성공| P[거래 완료 UI / 서버에 영수증 전송]
     O -->|실패| Q[실패 안내 UI / 재시도 유도]
+```
