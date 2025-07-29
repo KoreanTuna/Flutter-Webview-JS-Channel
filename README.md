@@ -1,4 +1,5 @@
-``` 
+```mermaid
+
 sequenceDiagram
   participant FlutterApp
   participant SecureWebViewWrapper
