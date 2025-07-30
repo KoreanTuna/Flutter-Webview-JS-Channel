@@ -64,6 +64,16 @@ class _SecureWebViewWrapperState extends State<SecureWebViewWrapper> {
           },
         );
       },
+      onReceivedHttpError:
+          (
+            InAppWebViewController controller,
+            WebResourceRequest request,
+            WebResourceResponse errorResponse,
+          ) {
+            debugPrint(
+              "HTTP Error: ${errorResponse.statusCode} for ${request.url}",
+            );
+          },
       shouldOverrideUrlLoading: (controller, action) async {
         if (widget.initialHtml != null) {
           return NavigationActionPolicy.ALLOW;
