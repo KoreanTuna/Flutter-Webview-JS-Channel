@@ -119,27 +119,17 @@ class TossLikeWebview extends StatelessWidget {
       </script>
     </head>
     <body>
-      <div class="container">
-        <h1>가상 결제창</h1>
-        <div class="desc">아래에서 결제 수단을 선택하고 결제 버튼을 눌러주세요.</div>
-        <div class="product">
-          <div class="product-img">👕</div>
-          <div class="product-info">
-            <div>상품명: <b>멋진 티셔츠</b></div>
-            <div class="price">가격: 3,000원</div>
-          </div>
-        </div>
-        <label for="payMethod">결제 수단 선택:</label>
-        <select id="payMethod">
-          <option value="card">카드결제</option>
-          <option value="transfer">계좌이체</option>
-          <option value="mobile">휴대폰결제</option>
-        </select>
-        <div class="btn-group">
-          <button class="success-btn" onclick="notifySuccess()">결제 완료</button>
-          <button class="fail-btn" onclick="notifyFail()">결제 실패</button>
-        </div>
-      </div>
+      <h1>가상 결제창</h1>
+      <p>상품명: 멋진 티셔츠</p>
+      <p>가격: 3000원</p>
+      <label for="payMethod">결제 수단 선택:</label>
+      <select id="payMethod">
+        <option value="card">카드결제</option>
+        <option value="transfer">계좌이체</option>
+      </select>
+      <br/><br/>
+      <button onclick="notifySuccess()"><h2>결제 완료</h2></button>
+      <button onclick="notifyFail()"><h2>결제 실패</h2></button>
     </body>
   </html>
   ''';
