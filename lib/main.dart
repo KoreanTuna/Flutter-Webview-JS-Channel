@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_js_channel/webview/toss_like/toss_like_webview.dart';
+import 'package:flutter_webview_js_channel/product_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,6 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: TossLikeWebview());
+    return const MaterialApp(home: ProductPage());
   }
 }
